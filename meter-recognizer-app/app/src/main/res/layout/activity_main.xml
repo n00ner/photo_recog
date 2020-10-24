@@ -6,13 +6,43 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
+        <Button
+            android:id="@+id/button3"
+            android:fontFamily="@font/g_regular"
+            android:textColor="#ffffff"
+            android:background="#02BAE8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Интерфейс для пользователей" />
+
+        <Button
+            android:id="@+id/button4"
+            android:fontFamily="@font/g_regular"
+            android:textColor="#ffffff"
+            android:background="#02BAE8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Пакетная обработка фото" />
+
+        <Button
+            android:id="@+id/button5"
+            android:fontFamily="@font/g_regular"
+            android:textColor="#ffffff"
+            android:background="#02BAE8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Debug View" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
